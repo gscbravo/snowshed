@@ -6,9 +6,9 @@ Simple reverse engineering of various Snowflake IDs.
 
 ### Snowflake ID Types
 
-- {twi}tter
-- {disc}ord
-- {mast}odon
+- (twi)tter
+- (disc)ord
+- (mast)odon
 
 ## Usage
 
