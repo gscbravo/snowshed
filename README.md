@@ -22,7 +22,7 @@ Simple reverse engineering of various Snowflake IDs.
 ## Usage
 
 ```
-go install github.com/gscbravo/snowshed
+go install github.com/gscbravo/snowshed@latest
 showshed -t TYPE
 ```
 
