@@ -6,7 +6,7 @@ Simple reverse engineering of various Snowflake IDs.
 
 ### Snowflake ID Types
 
-- (twi)tter
+- (twit)ter
 	- timestamp (42 bits)
 	- machine id (10 bits)
 	- sequence number (12 bits)

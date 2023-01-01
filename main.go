@@ -11,7 +11,7 @@ import (
 
 func main() {
 	// get -t flag
-	alltypes := "twi, disc, mast"
+	alltypes := "twit, disc, mast"
 	tflagptr := flag.String("t", "", "snowflake id type ("+alltypes+")")
 	flag.Parse()
 	tflag := strings.ToLower(strings.TrimSpace(*tflagptr))
@@ -22,7 +22,7 @@ func main() {
 		os.Exit(1)
 	}
 
-	if tflag == "twi" {
+	if tflag == "twit" {
 		// get user input and turn to uint64
 		fmt.Print("Twitter Snowflake ID: ")
 		var snowtext string
