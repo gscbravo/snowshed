@@ -26,6 +26,8 @@ go install github.com/gscbravo/snowshed
 showshed -t TYPE
 ```
 
+Valid types are listed above in parentheses for each respective platform.
+
 ## TODO
 
 - [ ] More Snowflake IDs when I'm aware of them
