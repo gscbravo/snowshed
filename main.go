@@ -76,6 +76,7 @@ func main() {
 		fmt.Printf("Sequence Data: %v\n", seqdata)
 	} else {
 		fmt.Printf("Type not recognized, valid: %v\n", alltypes)
+		flag.Usage()
 		os.Exit(1)
 	}
 }
