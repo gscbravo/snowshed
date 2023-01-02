@@ -11,7 +11,7 @@ import (
 
 func main() {
 	// get -t flag
-	alltypes := []string{"twit", "disc", "mast"}
+	alltypes := []string{"twitter", "discord", "mastodon"}
 	tflagptr := flag.String("t", "", fmt.Sprintf("snowflake id type, valid: %v", alltypes))
 	flag.Parse()
 	tflag := strings.ToLower(strings.TrimSpace(*tflagptr))
@@ -22,7 +22,7 @@ func main() {
 		os.Exit(1)
 	}
 
-	if tflag == "twit" {
+	if tflag == "twitter" {
 		// get user input and turn to uint64
 		fmt.Print("Twitter Snowflake ID: ")
 		var snowtext string
@@ -39,7 +39,7 @@ func main() {
 		fmt.Printf("Timestamp: %v\n", time.Unix(int64(timestamp/1000), 0).UTC().Format("Mon 2006-01-02 3:04:05 PM MST"))
 		fmt.Printf("Machine ID: %v\n", machineid)
 		fmt.Printf("Sequence Number: %v\n", seqnum)
-	} else if tflag == "disc" {
+	} else if tflag == "discord" {
 		// get user input and turn to uint64
 		fmt.Print("Discord Snowflake ID: ")
 		var snowtext string
@@ -58,7 +58,7 @@ func main() {
 		fmt.Printf("Worker ID: %v\n", workerid)
 		fmt.Printf("Process ID: %v\n", processid)
 		fmt.Printf("Increment: %v\n", increment)
-	} else if tflag == "mast" {
+	} else if tflag == "mastodon" {
 		// get user input and turn to uint64
 		fmt.Print("Mastodon Snowflake ID: ")
 		var snowtext string

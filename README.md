@@ -6,16 +6,16 @@ Simple reverse engineering of various Snowflake IDs.
 
 ### Snowflake ID Types
 
-- (twit)ter
+- twitter
 	- timestamp (42 bits)
 	- machine id (10 bits)
 	- sequence number (12 bits)
-- (disc)ord
+- discord
 	- timestamp (42 bits)
 	- worker id (5 bits)
 	- process id (5 bits)
 	- increment (12 bits)
-- (mast)odon
+- mastodon
 	- timestamp (48 bits)
 	- sequence data (16 bits)
 
@@ -26,7 +26,7 @@ go install github.com/gscbravo/snowshed@latest
 showshed -t TYPE
 ```
 
-Valid types are listed above in parentheses for each respective platform.
+Valid types are listed above under "Snowflake ID Types".
 
 ## TODO
 
