@@ -11,8 +11,8 @@ import (
 
 func main() {
 	// get -t flag
-	alltypes := "twit, disc, mast"
-	tflagptr := flag.String("t", "", "snowflake id type ("+alltypes+")")
+	alltypes := []string{"twit", "disc", "mast"}
+	tflagptr := flag.String("t", "", fmt.Sprintf("snowflake id type %v", alltypes))
 	flag.Parse()
 	tflag := strings.ToLower(strings.TrimSpace(*tflagptr))
 
@@ -75,6 +75,7 @@ func main() {
 		fmt.Printf("Timestamp: %v\n", time.Unix(int64(timestamp/1000), 0).UTC().Format("Mon 2006-01-02 3:04:05 PM MST"))
 		fmt.Printf("Sequence Data: %v\n", seqdata)
 	} else {
-		fmt.Printf("Types not recognized, (%v)\n", alltypes)
+		fmt.Printf("Type not recognized %v\n", alltypes)
+		os.Exit(1)
 	}
 }
