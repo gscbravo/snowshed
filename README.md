@@ -26,7 +26,7 @@ go install github.com/gscbravo/snowshed@latest
 showshed -t TYPE
 ```
 
-Valid types are listed above under "Snowflake ID Types".
+Valid types are listed above in the section under "Snowflake ID Types".
 
 ## TODO
 
