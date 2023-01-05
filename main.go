@@ -19,7 +19,7 @@ func main() {
 	// leave if empty
 	if tflag == "" {
 		flag.Usage()
-		os.Exit(1)
+		os.Exit(0)
 	}
 
 	if tflag == "twitter" {
